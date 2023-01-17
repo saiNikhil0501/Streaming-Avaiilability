@@ -1,0 +1,152 @@
+.background{
+    background-color: black; 
+    justify-content: center;
+    align-items: center;
+}
+.h1{
+    text-align: center;
+    transform: translate(0, 300%) 
+
+}
+.headingA{
+    color: red;
+    font-size: 200%;
+    font-family: 'Trebuchet MS';
+  
+}
+.headingB{
+    font-size: 200%;
+    color:white;
+    font-family: 'Trebuchet MS';
+}
+.description{
+    color:white;
+    text-align: center;
+    font-size: 120%;
+    font-family: 'Lucida Grande';
+    margin-top: 250px;
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+
+  .form{
+    transform: translateX(50%);
+  }
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: whitesmoke;
+  color: black;
+ }
+
+  
+input[type="text"]::placeholder {
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+
+button{
+    float: left;
+    width: 20%;
+    padding: 20px;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    background: red url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+    border-radius: inherit;
+    position: relative;
+
+  }
+  
+  
+  button:hover{
+    opacity: 1;
+  }
+
+  .movie {
+    width: 300px;
+    margin: 1rem;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgba(119, 44, 44, 0.387);
+    background-color: gray;
+    position:relative;
+    overflow: hidden;
+    display: inline-block;
+    margin-left: 35px;
+    
+  }
+
+
+.movie img{
+    width:100%;
+}
+
+.movie-info{
+    color:#eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.movie-info h3{
+    margin-top: 0;
+}
+
+.movie-info span{
+    background-color: var(--primary-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie-info span.green{
+    color:darkgreen;
+}
+
+.movie-info span.yellow{
+    color:yellow;
+}
+
+.movie-info span.red{
+    color:red;
+}
+
+.overview{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: #fff;
+    padding: 1rem;
+    max-height: 100%;
+    transform:translateY(101%);
+    transition:transform 0.3s ease-in;
+}
+
+.movie:hover .overview{
+    transform:translateY(0)
+}
+
+header{
+   padding: 1rem;
+    display:flex;
+    background-color: darkred;
+    height: 58px;
+}
+
+.form2{
+  margin-top: 0px; 
+  margin-left: 300px; 
+  max-width: 300px;
+}
